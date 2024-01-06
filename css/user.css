@@ -1,0 +1,141 @@
+QMainWindow {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+}
+
+QPushButton {
+  background-color: #005eab;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin: 5px 5px;
+}
+QPushButton:hover {
+  background-color: #0174BE;
+}
+
+
+QLabel {
+  font-weight: bold;
+  font-size: 16px;
+  color: #3a3a3a;
+  margin: 5px 5px;
+}
+QCheckBox{
+  padding: 5px;
+  margin: 5px 5px;
+}
+
+QLineEdit,
+QTextEdit,
+QComboBox {
+  border: 1px solid #d1d1d1;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 14px;
+  margin: 5px 5px;
+}
+
+QComboBox::drop-down {
+  border: none;
+}
+
+
+QLineEdit {
+  min-width: 300px;
+  min-height: 30px;
+}
+QPushButton {
+  background-color: #005eab;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+#home_widget_button,
+#notification_widget_button,
+#user_info_window_button,
+#history_widget_button,
+#reserve_list_widget_button,
+#logout_button {
+  background-color: #0766AD;
+  color: #ffffff;
+  padding: 10px 15px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 0px;
+  margin: 0;
+  text-align: left;
+}
+
+#home_widget_button:hover,
+#notification_widget_button:hover,
+#user_info_window_button:hover,
+#history_widget_button:hover,
+#reserve_list_widget_button:hover,
+#logout_button:hover {
+  background-color: #0174BE;
+}
+#TabContainer QLabel{
+  background-color: #0766AD;
+  margin-top: 5px;
+}
+
+#home_widget_button:checked,
+#notification_widget_button:checked,
+#user_info_window_button:checked,
+#history_widget_button:checked,
+#reserve_list_widget_button:checked {
+  background-color: #39A7FF;
+  color: #ffffff;
+  /* margin-left: 10px; */
+}
+#TabContainer {
+  border: none;
+  background-color: #0766AD; 
+  
+}
+QFrame {
+  
+  border: none;
+  font-size: 16px;
+}
+
+
+
+/* QTableView::item {border: 0px; padding: 10px; }
+QTableWidget {
+    border: 1px solid #3a3a3a;
+    border-radius: 5px;
+} */
+QHeaderView::section {   
+    color: #000000;
+    background-color:  rgb(229, 229, 229);
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+}
+
+QTableWidget { 
+  background-color:  rgb(229, 229, 229);
+  border: none;
+}
+
+QTableWidget QTableCornerButton::section {
+    background-color:  rgb(229, 229, 229);
+    
+}
+#book-button{
+  background-color: #ffffff;
+  border: 1px solid #d1d1d1;
+  border-radius: 10px;
+  padding: 10px 15px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+#book-button:hover{
+  background-color: #dfdfdf; 
+}

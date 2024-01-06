@@ -1,0 +1,84 @@
+#Create database
+
+Create database Library;
+Use Library;
+
+#Create table Users
+
+CREATE TABLE Users (
+    ID INT AUTO_INCREMENT PRIMARY KEY,
+    First_name VARCHAR(255) NOT NULL,
+    Last_name VARCHAR(255) NOT NULL,
+    Email VARCHAR(255) NOT NULL UNIQUE,
+    Password VARCHAR(255) NOT NULL,
+    Role VARCHAR(255) NOT NULL,
+    Created_date DATETIME NOT NULL
+);
+
+# Create table Books
+
+CREATE TABLE Books (
+    ID INT AUTO_INCREMENT PRIMARY KEY,
+    Name TEXT NOT NULL,
+    Genre VARCHAR(255),
+    Author VARCHAR(255),
+    Publisher_id INT,
+    Description TEXT,
+    Quantity INT NOT NULL,
+    Price INT NOT NULL,
+    BookImage TEXT NOT NULL,
+    Update_day DATETIME NOT NULL,
+    CONSTRAINT check_quantity CHECK (Quantity >= 0)
+);
+
+# Create TABLE Entries
+
+Create TABLE Entries (
+    ID_Entries INT AUTO_INCREMENT PRIMARY KEY,
+    ID_Book INT NOT NULL,
+    Quantity INT NOT NULL,
+    Price INT NOT NULL,
+    Update_day DATETIME NOT NULL
+),
+
+# Create table Expiry 
+
+CREATE TABLE Expiry  (
+    ID INT PRIMARY KEY,
+    Usage_time INT NOT NULL,
+    Status VARCHAR(50) NOT NULL,
+    Update_day DATETIME NOT NULL
+);
+
+
+# Create table Publishers
+
+CREATE TABLE Publishers (
+    ID INT AUTO_INCREMENT PRIMARY KEY,
+    Name VARCHAR(255) NOT NULL,
+    Update_day DATETIME NOT NULL
+);
+
+# Create table Reservations
+
+CREATE TABLE Reservations (
+    Reservation_id INT AUTO_INCREMENT PRIMARY KEY,
+    Book_id INT NOT NULL,
+    User_id INT NOT NULL,
+    Quantity INT NOT NULL,
+    Reservation_date DATETIME,
+    Deadline DATETIME,
+    Status VARCHAR(255) NOT NULL
+);
+
+# Create table Checkouts
+
+CREATE TABLE Checkouts (
+    Checkout_id INT AUTO_INCREMENT PRIMARY KEY,
+    Book_id INT NOT NULL,
+    User_id INT NOT NULL,
+    Quantity INT NOT NULL,
+    Checkout_date DATETIME NOT NULL,
+    Due_date DATETIME NOT NULL,
+    Return_date DATETIME
+);

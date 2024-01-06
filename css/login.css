@@ -1,0 +1,43 @@
+/* Add your CSS styles here */
+
+QWidget {
+    background-color: #f0f0f0; 
+  }
+  
+  QPushButton {
+    background-color: #3498db; 
+    border: 1px solid #3498db; 
+    border-radius: 5px; 
+    padding: 5px 10px;
+    color: #f0f0f0;
+  }
+  
+  QLineEdit {
+    border: 1px solid #d1d1d1;
+    padding: 5px;
+    border-radius: 5px;
+    
+  }
+  
+  QLabel {
+    color: #333;
+    margin-bottom: 0px;
+  }
+  
+  QComboBox {
+      border: 1px solid #d1d1d1;
+      border-radius: 5px;
+      padding: 5px;
+      font-size: 14px;
+    }
+  
+  QComboBox::drop-down {
+      width: 0;
+      border: none;
+      background: none;
+  }
+
+  QLineEdit:focus
+{
+    border: 1px solid #000000;
+}

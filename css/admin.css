@@ -1,0 +1,133 @@
+
+QPushButton {
+  background-color: #005eab;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin: 5px 5px;
+}
+QPushButton:hover {
+  background-color: #005eab;
+}
+
+
+QLabel {
+  font-weight: bold;
+  font-size: 16px;
+  color: #3a3a3a;
+  margin: 5px 5px;
+}
+QLineEdit,
+QTextEdit,
+QComboBox {
+  border: 1px solid #d1d1d1;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 14px;
+}
+
+QComboBox::drop-down {
+  border: none;
+}
+
+QLineEdit {
+  min-width: 300px;
+  min-height: 30px;
+  margin: 5px 5px;
+}
+QPushButton {
+  background-color: #005eab;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+#list_books_button,
+#add_book_button,
+#list_users_button,
+#expiry_button,
+#list_checkouts_button,
+#list_reservations_button,
+#dashboard_button,
+#logout_button {
+  background-color: #0766AD;
+  color: #ffffff;
+  padding: 10px 15px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 0px;
+  margin: 0;
+  text-align: left;
+}
+
+#expiry_button:hover,
+#list_users_button:hover,
+#add_book_button:hover,
+#list_books_button:hover,
+#list_checkouts_button:hover,
+#list_reservations_button:hover,
+#dashboard_button:hover,
+#logout_button:hover {
+  background-color: #0174BE;
+}
+#TabContainer QLabel{
+  background-color: #0766AD;
+  margin-top: 5px;
+}
+
+#list_books_button:checked,
+#add_book_button:checked,
+#list_users_button:checked,
+#expiry_button:checked,
+#list_checkouts_button:checked,
+#dashboard_button:checked,
+#list_reservations_button:checked {
+  background-color: #39A7FF;
+  color: #ffffff;
+  /* margin-left: 10px; */
+}
+#TabContainer {
+  border: none;
+  
+  background-color: #0766AD; 
+  
+}
+/* QFrame {
+  background-color: #f9f9f9;
+} */
+QWidGet{
+  background-color: #f9f9f9;
+}
+
+QHeaderView::section {   
+    color: #000000;
+    background-color:  rgb(229, 229, 229);
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+}
+
+QTableWidget { 
+  background-color:  rgb(229, 229, 229);
+  border: none;
+}
+
+QTableWidget QTableCornerButton::section {
+    background-color:  rgb(229, 229, 229);
+    
+}
+#edit_title_button,
+#edit_genre_button,
+#edit_author_button,
+#edit_publisher_button,
+#edit_description_button,
+#edit_quantity_button{
+  background-color:#f0f0f0 ;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+}
+
+#description{border: none;}
